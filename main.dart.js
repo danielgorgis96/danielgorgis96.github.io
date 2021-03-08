@@ -13294,7 +13294,7 @@ _.e=a
 _.f=b
 _.c=c
 _.a=d},
-uo:function(a){return new K.Vg(a,new P.y2(null,null,t.wD))},
+uo:function(a,b){return new K.Vg(b,a,new P.y2(null,null,t.wD))},
 at5:function(a){var s=new P.T($.P,t.U),r=new P.aw(s,t.h)
 a.es(r.ga56(r)).fz(new K.Vn())
 return s},
@@ -13304,9 +13304,10 @@ _.b=b
 _.c=c
 _.d=d
 _.e=e},
-Vg:function Vg(a,b){var _=this
+Vg:function Vg(a,b,c){var _=this
 _.b=a
-_.e=b
+_.d=b
+_.e=c
 _.x=_.r=_.f=null},
 Vm:function Vm(a){this.a=a},
 Vn:function Vn(){},
@@ -64041,7 +64042,7 @@ break
 case 1:return P.a1(q,r)}})
 return P.a2($async$lU,r)},
 XV:function(){var s=this,r=s.f
-if(r==null){r=$.Pr().pZ(null,null,s.b,C.Bd)
+if(r==null){r=$.Pr().pZ(s.d,null,s.b,C.Bd)
 r.fz(new K.Vm(s))
 s.f=r}return r},
 of:function(a,b){return this.VS(a,b)},
@@ -64146,7 +64147,7 @@ return P.ki(H.c([this.a,this.b],t.J1),t.H)},
 pZ:function(a,b,c,d){return this.a7K(a,b,c,d)},
 a7K:function(a,b,c,d){var s=0,r=P.a3(t.H),q,p=this,o,n,m,l
 var $async$pZ=P.Z(function(e,f){if(e===1)return P.a0(f,r)
-while(true)switch(s){case 0:l=p.d
+while(true)switch(s){case 0:l=a==null?p.d:a
 s=3
 return P.a_(p.a,$async$pZ)
 case 3:o=self.gapi.auth2.init({client_id:l,scope:C.b.bv(c," "),hosted_domain:b})
@@ -65190,7 +65191,7 @@ this.a.push(s)},
 $S:4}
 N.lJ.prototype={
 ay:function(){var s=null
-return new N.CO(new N.bq(s,t.Jv),K.uo(H.c(["email"],t.i)),D.xq(s),D.xq(s),D.xq(s),D.xq(s),C.l)}}
+return new N.CO(new N.bq(s,t.Jv),K.uo(s,H.c(["email"],t.i)),D.xq(s),D.xq(s),D.xq(s),D.xq(s),C.l)}}
 N.CO.prototype={
 Pt:function(a){var s,r=null,q=N.ads(L.bJ("Exit",r,r,r,r,r,r),r,new N.RK(a),r,r),p=N.ads(L.bJ("Go to my notes",r,r,r,r,r,r),r,new N.RL(a),r,r),o=L.fo(C.yn,C.zU,40),n=L.bJ("Note saved!\nWould you like to see your note?",r,r,r,r,r,r),m=H.c([q,p],t.a),l=K.ft(a,!0).c
 l.toString
@@ -65269,7 +65270,7 @@ o.Pt(this.b)}else P.dz("Not valid")},
 $S:2}
 M.mu.prototype={
 ay:function(){var s=t.a,r=t.i
-return new M.Fc(H.c([],t.uP),H.c([],s),H.c([],r),H.c([],s),new N.bq(null,t.Jv),K.uo(H.c(["email"],r)),D.xq("#"),new M.ou(U.adi(null)),C.l)}}
+return new M.Fc(H.c([],t.uP),H.c([],s),H.c([],r),H.c([],s),new N.bq(null,t.Jv),K.uo(null,H.c(["email"],r)),D.xq("#"),new M.ou(U.adi(null)),C.l)}}
 M.Fc.prototype={
 aM:function(){var s,r
 this.br()
@@ -65380,7 +65381,7 @@ M.Yb.prototype={
 $0:function(){C.b.sl(this.a.f,0)},
 $S:2}
 Y.mv.prototype={
-ay:function(){return new Y.Fd(K.uo(H.c(["email"],t.i)),C.l)}}
+ay:function(){return new Y.Fd(K.uo(null,H.c(["email"],t.i)),C.l)}}
 Y.Fd.prototype={
 aM:function(){var s,r
 this.br()
@@ -65399,7 +65400,7 @@ Y.Yq.prototype={
 $0:function(){this.a.d=this.b},
 $S:2}
 L.kx.prototype={
-ay:function(){return new L.EX(K.uo(H.c(["email"],t.i)),C.l)}}
+ay:function(){return new L.EX(K.uo(null,H.c(["email"],t.i)),C.l)}}
 L.EX.prototype={
 aM:function(){var s,r
 this.br()
@@ -65418,7 +65419,7 @@ L.Xx.prototype={
 $0:function(){this.a.d=this.b},
 $S:2}
 L.aaz.prototype={
-$0:function(){var s=K.uo(H.c(["email"],t.i)),r=$.Pr()
+$0:function(){var s=K.uo(null,H.c(["email"],t.i)),r=$.Pr()
 s.VR(r.gAI(r))
 K.ft(this.a,!1).lg("/",t._)},
 $S:2}
@@ -70313,7 +70314,7 @@ r($,"aBf","anm",function(){return new E.ZF(P.bO("/",!0),P.bO("[^/]$",!0),P.bO("^
 r($,"aBh","Pt",function(){return new L.a4M(P.bO("[/\\\\]",!0),P.bO("[^/\\\\]$",!0),P.bO("^(\\\\\\\\[^\\\\]+\\\\[^\\\\/]+|[a-zA-Z]:[/\\\\])",!0),P.bO("^[/\\\\](?![/\\\\])",!0))})
 r($,"aBg","Ba",function(){return new F.a4B(P.bO("/",!0),P.bO("(^[a-zA-Z][-+.a-zA-Z\\d]*://|[^/])$",!0),P.bO("[a-zA-Z][-+.a-zA-Z\\d]*://[^/]*",!0),P.bO("^/",!0))})
 r($,"aBe","afH",function(){return O.av_()})
-q($,"aCl","acL",function(){return K.uo(H.c(["email"],t.i))})
+q($,"aCl","acL",function(){return K.uo("185072406685-j65okjl7ptipoc9lfmlpdi6a7nqqkrqe.apps.googleusercontent.com",H.c(["email"],t.i))})
 q($,"aD5","aor",function(){return M.asp()})})();(function nativeSupport(){!function(){var s=function(a){var m={}
 m[a]=1
 return Object.keys(hunkHelpers.convertToFastObject(m))[0]}
