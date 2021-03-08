@@ -1,8 +1,8 @@
 {
-    "name": "flutter_web_firebase_googe_auth",
-    "short_name": "flutter_web_firebase_googe_auth",
+    "name": "techcard",
+    "short_name": "techcard",
     "start_url": ".",
-    "display": "minimal-ui",
+    "display": "standalone",
     "background_color": "#0175C2",
     "theme_color": "#0175C2",
     "description": "A new Flutter project.",
